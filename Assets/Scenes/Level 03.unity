@@ -525,7 +525,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520002099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.544, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2135943334}
@@ -727,7 +727,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932380349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 0.53, z: 0.37}
+  m_LocalPosition: {x: 0.03, y: 0.53, z: 0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1644269567}
@@ -1658,15 +1658,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456436, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.46
+      value: 49.477
       objectReference: {fileID: 0}
     - target: {fileID: 456436, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 51.01
+      value: 51.006
       objectReference: {fileID: 0}
     - target: {fileID: 456436, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 74.96
+      value: 74.816
       objectReference: {fileID: 0}
     - target: {fileID: 456436, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1702,7 +1702,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 81a7f7e803ff6f245b8b19db0323c6e6, type: 2}
     - target: {fileID: 9522842, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 13761724, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1785,11 +1785,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewingDistance: 10
-  attackDistance: 2
-  attackRange: 0.7
+  attackDistance: 5
+  attackRange: 3
   attackCountDownSeconds: 1
   attackPoint: {fileID: 932380349}
-  health: 200
+  health: 120
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

@@ -38,7 +38,6 @@ namespace My.Monsters
 
         void FixedUpdate()
         {
-            // change slime animation
             SetAnimation();
             
             _distanceToPlayer = Vector3.Distance(_target.position, 
@@ -92,7 +91,7 @@ namespace My.Monsters
             _enableAttack = true;
             foreach (Collider unused in hitColliders)
             {
-                _gameManager.DamagePlayer(10);
+                _gameManager.DamagePlayer(30);
             }
         }
 
