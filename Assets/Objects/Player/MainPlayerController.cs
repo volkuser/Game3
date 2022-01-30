@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace My.Player
+namespace Objects.Player
 {
     public class MainPlayerController : MonoBehaviour
     {

@@ -2,18 +2,17 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
 
-namespace My.Monsters
+namespace Objects.Monsters
 {
     public class BullController : MonoBehaviour, IAttackable
     {
         public float viewingDistance = 10f;
-        public float attackDistance = 2f;
-        public float attackRange = 0.7f;
+        public float attackDistance = 5f;
+        public float attackRange = 3f;
         public int attackCountDownSeconds = 1;
         
         public GameObject attackPoint;
-        public int health = 200;
-        //public ParticleSystem damageParticle;
+        public int health = 150;
         
         private bool _enableAttack = true;
         private float _distanceToPlayer;
@@ -109,8 +108,6 @@ namespace My.Monsters
         
         private void Death()
         {
-            //damageParticle.transform.parent = null;
-            //damageParticle.Play();
             Destroy(gameObject);
             _gameManager.AddScore(100);
         }

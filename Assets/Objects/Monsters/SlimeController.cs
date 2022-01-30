@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
 
-namespace My.Monsters
+namespace Objects.Monsters
 {
     public class SlimeController : MonoBehaviour, IAttackable
     {

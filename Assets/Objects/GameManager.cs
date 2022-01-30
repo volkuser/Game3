@@ -2,10 +2,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace My
+namespace Objects
 {
     public class GameManager : MonoBehaviour
     {
+        public int gameLevel = 1;
+        
         // player state
         private int _totalScore;
         private int _health = 100;
@@ -14,6 +16,7 @@ namespace My
         public Text scoreText;
         public Slider healthBar;
         public Image deathWindow;
+        public Text targetContent;
         
         public GameObject player;
 
@@ -56,6 +59,7 @@ namespace My
             player.gameObject.SetActive(false);
             scoreText.gameObject.SetActive(false);
             healthBar.gameObject.SetActive(false);
+            targetContent.gameObject.SetActive(false);
             
             deathWindow.gameObject.SetActive(true);
         }

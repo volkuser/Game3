@@ -1,4 +1,4 @@
-namespace My
+namespace Objects
 {
     public interface IAttackable
     {
