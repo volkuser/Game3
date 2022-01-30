@@ -31,6 +31,8 @@ namespace Objects.Player
             // initializing of class objects
             rigidbody = GetComponent<Rigidbody>();
             _animationManager = GetComponent<AnimationManager>();
+            
+            
         }
 
         void FixedUpdate()

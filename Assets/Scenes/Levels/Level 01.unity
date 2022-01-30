@@ -23454,6 +23454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cdd8b1c1696865449242d96a766d597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameLevel: 1
   scoreText: {fileID: 1669977514}
   healthBar: {fileID: 619748168}
   deathWindow: {fileID: 1313557464}

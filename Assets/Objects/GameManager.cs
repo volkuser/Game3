@@ -29,8 +29,17 @@ namespace Objects
 
         void FixedUpdate()
         {
-            if (player.transform.position.y < -5) 
-                Death();
+            if (gameLevel == 1)
+            {
+                if (player.transform.position.y < -8)
+                    Death();
+                EndLevel(gameLevel);
+            } else if (gameLevel == 2 || gameLevel == 3)
+            {
+                if (player.transform.position.y < 48)
+                    Death();
+                EndLevel(gameLevel);
+            }
         }
 
         public void Awake()
@@ -66,8 +75,27 @@ namespace Objects
 
         public void RestartGame()
         {
-            SceneManager.LoadScene(SceneManager.
-                GetActiveScene().buildIndex);
+            SceneManager.LoadScene(gameLevel);
+        }
+
+        private void EndLevel(int level)
+        {
+            switch (level)
+            {
+                case 1: if (_totalScore == 400
+                    && player.transform.position.y < -7)
+                        SceneManager.LoadScene(2);
+                    break;
+                case 2: if (_totalScore > 99
+                    && player.transform.position.y < 51
+                    && player.transform.position.z > 42) 
+                        SceneManager.LoadScene(3);
+                    break;
+                case 3:
+                    if (_totalScore > 199
+                    ) SceneManager.LoadScene(4);
+                    break;
+            }
         }
     }
 }

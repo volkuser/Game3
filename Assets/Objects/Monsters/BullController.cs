@@ -12,7 +12,7 @@ namespace Objects.Monsters
         public int attackCountDownSeconds = 1;
         
         public GameObject attackPoint;
-        public int health = 150;
+        public int health = 90;
         
         private bool _enableAttack = true;
         private float _distanceToPlayer;
@@ -90,7 +90,7 @@ namespace Objects.Monsters
             _enableAttack = true;
             foreach (Collider unused in hitColliders)
             {
-                _gameManager.DamagePlayer(30);
+                _gameManager.DamagePlayer(15);
             }
         }
 
@@ -109,7 +109,7 @@ namespace Objects.Monsters
         private void Death()
         {
             Destroy(gameObject);
-            _gameManager.AddScore(100);
+            _gameManager.AddScore(200);
         }
     }
 }
